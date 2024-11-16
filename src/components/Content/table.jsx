@@ -64,7 +64,9 @@ function VideoWithTable() {
 
       // Check if there's info to add at the current time
       const marker = timeMarkers.find(
-        (marker) => marker.time === currentTime && !rows.some((row) => row.time === marker.time)
+        (marker) =>
+          marker.time === currentTime &&
+          !rows.some((row) => row.time === marker.time)
       );
 
       if (marker) {
@@ -80,36 +82,67 @@ function VideoWithTable() {
   }, [rows, timeMarkers]);
 
   return (
-    <div className='datastream'>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        gap: "20px",
+        alignItems: "flex-start",
+        padding: "20px",
+        
+      }}
+    >
+      {/* Left column: Video and controls */}
       <div>
-        <video ref={videoRef} controls width="600">
-          <source src="https://feed-samples.s3.us-east-2.amazonaws.com/ESPN2_LIVE.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <div>
+          <video ref={videoRef} controls width="400">
+            <source
+              src="https://feed-samples.s3.us-east-2.amazonaws.com/ESPN2_LIVE.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div
+          style={{
+            marginTop: "10px",
+            display: "flex",
+            justifyContent: "center",
+            gap: "10px",
+          }}
+        >
+          <button onClick={handleRestart}>Restart</button>
+          <button onClick={handlePrevious}>Previous Ad</button>
+          <button onClick={handleNext}>Next Ad</button>
+        </div>
       </div>
 
-      <div style={{ marginTop: "20px", display: "flex", justifyContent: "center", gap: "10px" }}>
-        <button onClick={handleRestart}>Restart</button>
-        <button onClick={handlePrevious}>Previous Ad</button>
-        <button onClick={handleNext}>Next Ad</button>
-      </div>
-
-      <table border="1" style={{ marginTop: "20px", width: "100%" }}>
-        <thead>
-          <tr>
-            <th>Time (s)</th>
-            <th>Info</th>
-          </tr>
-        </thead>
-        <tbody>
-          {rows.map((row, index) => (
-            <tr key={index}>
-              <td>{row.time}</td>
-              <td>{row.info}</td>
+      {/* Right column: Table */}
+      <div style={{ flex: 1 }}>
+        <table
+          border="1"
+          style={{
+            backgroundColor: "white",
+            width: "100%",
+            borderCollapse: "collapse",
+          }}
+        >
+          <thead>
+            <tr>
+            <th style={{ width: "120px" }}>Timestamp (s)</th>
+            <th style={{ width: "350px" }}>Info</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {rows.map((row, index) => (
+              <tr key={index}>
+                <td style={{ width: "20%" }}>{row.time}</td>
+                <td style={{ width: "80%" }}>{row.info}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
