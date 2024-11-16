@@ -1,73 +1,72 @@
 # SparrowTv.AI
 
+# Demo Site: Dynamic Ad Insertion
 
-# Getting Started with Create React App
+Welcome to the **Dynamic Ad Insertion** demo site! This project demonstrates the integration of video playback with dynamically updating table data based on specific timestamps. Experience how video ads and metadata can be synchronized and interactively displayed.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 Live Site  
+Visit the demo: [Dynamic Ad Insertion Demo](https://main.draijba06nwkv.amplifyapp.com/)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📜 Features  
+1. **Video Playback**  
+   - Watch a preloaded video with a sleek player interface.
+   - Control playback with buttons for *restart*, *previous timestamp*, and *next timestamp*.
 
-### `npm start`
+2. **Dynamic Table Updates**  
+   - A table on the right side updates automatically based on specific timestamps in the video.
+   - Each entry in the table corresponds to an ad event in the video.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **Responsive Design**  
+   - The video and table are displayed side-by-side for a clean and organized layout.
+   - Fully responsive interface for different screen sizes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Technologies Used  
+- **Frontend**: React.js  
+- **Styling**: CSS (includes gradient effects and responsive layout)  
+- **Deployment**: AWS Amplify  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ⚙️ How It Works  
+1. **Video Integration**  
+   - A video plays on the left column, tracking the current playback time.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Table Updates**  
+   - Predefined time markers trigger updates to the table when the video reaches specific timestamps.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Playback Controls**  
+   - Buttons allow for easy navigation:
+     - Restart the video.
+     - Jump to the previous or next timestamp associated with an event.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🧭 Navigation  
+### Sections:
+- **Video**: Displays the main video.
+- **Ad Table**: Displays information synchronized with the video.
+- **Controls**: Use buttons to navigate through the video timestamps.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🌟 Getting Started  
+Simply visit the live demo site and:
+1. Press play to start the video.
+2. Observe the table updating dynamically as the video progresses.
+3. Use the control buttons to interact with the playback.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🤝 Contributing  
+Interested in contributing? Feel free to fork this project or submit issues to improve the functionality and design.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📧 Contact  
+For questions, feedback, or collaboration opportunities, please reach out to me at ivanna@sparrowtv.ai.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Enjoy exploring **Dynamic Ad Insertion**! 🎥📊
