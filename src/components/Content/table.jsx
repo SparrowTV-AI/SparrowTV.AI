@@ -8,7 +8,18 @@ function VideoWithTable() {
   const timeMarkers = [
     { time: 5, info: "Underdog Ad" },
     { time: 35, info: "Cricket Wireless Ad" },
-    { time: 80, info: "Chewy Ad" },
+    { time: 50, info: "Adidas Ad" },
+    { time: 80, info: "Papa Johns Pizza Ad" },
+    { time: 95, info: "Chewy Ad" },
+    { time: 110, info: "Downy Comfy Cozy Ad" },
+    { time: 145, info: "PNC Bank Ad" },
+    { time: 170, info: "Wingstop Ad" },
+    { time: 355, info: "Carnival Cruise Ad" },
+    { time: 385, info: "Deadpool X Wolverine streaming on Disney+ Ad" },
+    { time: 400, info: "Macy's Black Friday Ad" },
+    { time: 415, info: "Taco Bell Ad" },
+    { time: 445, info: "Gladiator II Movie Ad" },
+    { time: 460, info: "Video Game Ad" },
   ];
 
   // Restart video playback
@@ -69,7 +80,7 @@ function VideoWithTable() {
   }, [rows, timeMarkers]);
 
   return (
-    <div>
+    <div className='datastream'>
       <div>
         <video ref={videoRef} controls width="600">
           <source src="https://feed-samples.s3.us-east-2.amazonaws.com/ESPN2_LIVE.mp4" type="video/mp4" />

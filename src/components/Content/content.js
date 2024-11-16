@@ -5,7 +5,8 @@ function Content() {
   return (
     <div className="Content">
       <div className="heading">
-        <h1>Dynamic Ad Insertion</h1>
+        <h1>Automatic Content Recognition
+        </h1>
       </div>
         <div className="video-container">
             <VideoWithTable/>
