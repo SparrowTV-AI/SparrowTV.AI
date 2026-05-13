@@ -1,72 +1,58 @@
-# SparrowTv.AI
+# SparrowTV.AI
 
-# Demo Site: Dynamic Ad Insertion
+**Dynamic Ad Insertion for Linear TV & CTV**
 
-Welcome to the **Dynamic Ad Insertion** demo site! This project demonstrates the integration of video playback with dynamically updating table data based on specific timestamps. Experience how video ads and metadata can be synchronized and interactively displayed.
+SparrowTV.AI is a React-based marketing site for a DAI platform — featuring impression-level tracking, sub-15ms ad decisioning, and unified reporting across broadcast linear and connected TV.
 
-## 🚀 Live Site  
-Visit the demo: [Dynamic Ad Insertion Demo](https://main.draijba06nwkv.amplifyapp.com/)
+## Live Site
 
----
-
-## 📜 Features  
-1. **Video Playback**  
-   - Watch a preloaded video with a sleek player interface.
-   - Control playback with buttons for *restart*, *previous timestamp*, and *next timestamp*.
-
-2. **Dynamic Table Updates**  
-   - A table on the right side updates automatically based on specific timestamps in the video.
-   - Each entry in the table corresponds to an ad event in the video.
-
-3. **Responsive Design**  
-   - The video and table are displayed side-by-side for a clean and organized layout.
-   - Fully responsive interface for different screen sizes.
+[https://main.draijba06nwkv.amplifyapp.com/](https://main.draijba06nwkv.amplifyapp.com/)
 
 ---
 
-## 🛠️ Technologies Used  
-- **Frontend**: React.js  
-- **Styling**: CSS (includes gradient effects and responsive layout)  
-- **Deployment**: AWS Amplify  
+## Tech Stack
+
+- **Frontend**: React.js
+- **Styling**: Global CSS with SparrowTV brand tokens
+- **Icons**: Tabler Icons
+- **Fonts**: Montserrat, Roboto (Google Fonts)
+- **Deployment**: AWS Amplify
 
 ---
 
-## ⚙️ How It Works  
-1. **Video Integration**  
-   - A video plays on the left column, tracking the current playback time.
+## Project Structure
 
-2. **Table Updates**  
-   - Predefined time markers trigger updates to the table when the video reaches specific timestamps.
-
-3. **Playback Controls**  
-   - Buttons allow for easy navigation:
-     - Restart the video.
-     - Jump to the previous or next timestamp associated with an event.
-
----
-
-## 🧭 Navigation  
-### Sections:
-- **Video**: Displays the main video.
-- **Ad Table**: Displays information synchronized with the video.
-- **Controls**: Use buttons to navigate through the video timestamps.
-
----
-
-## 🌟 Getting Started  
-Simply visit the live demo site and:
-1. Press play to start the video.
-2. Observe the table updating dynamically as the video progresses.
-3. Use the control buttons to interact with the playback.
+```
+src/
+  components/
+    Banner/       # Sticky nav (logo, links, CTA)
+    Hero/         # Hero section with live ad timeline visual
+    TrustLogos/   # Trusted-by operator pill row
+    Features/     # Platform capability cards
+    Stats/        # Deep-navy performance stats
+    HowItWorks/   # 4-step process
+    Audiences/    # Broadcaster / CTV / Advertiser cards
+    CTASection/   # Bottom call-to-action
+    Footer/       # Footer with links and copyright
+  index.css       # Brand CSS tokens and all global styles
+  App.js          # Composes all sections
+public/
+  brand/          # Sparrow logo variants (gradient, navy, teal, etc.)
+```
 
 ---
 
-## 🤝 Contributing  
-Interested in contributing? Feel free to fork this project or submit issues to improve the functionality and design.
+## Getting Started
+
+```bash
+npm install
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ---
 
-## 📧 Contact  
-For questions, feedback, or collaboration opportunities, please reach out to me at ivanna@sparrowtv.ai.
+## Contact
 
-Enjoy exploring **Dynamic Ad Insertion**! 🎥📊
+Questions, feedback, or partnership inquiries — reach out at [ivanna@sparrowtv.ai](mailto:ivanna@sparrowtv.ai).
