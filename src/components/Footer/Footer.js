@@ -1,5 +1,11 @@
 
-const LINKS = ['Privacy', 'Terms', 'Security', 'Status', 'Contact'];
+const LINKS = [
+  { label: 'Privacy',  href: '/privacy' },
+  { label: 'Terms',    href: '/terms' },
+  { label: 'Security', href: '/security' },
+  { label: 'Status',   href: '/status' },
+  { label: 'Contact',  href: 'mailto:ivanna@sparrowtv.ai' },
+];
 
 function Footer() {
   return (
@@ -11,8 +17,8 @@ function Footer() {
         <span><span className="word">SPARROWTV</span><span className="ai">.AI</span></span>
       </span>
       <div className="sp-footer-links">
-        {LINKS.map((link) => (
-          <a key={link} href="#">{link}</a>
+        {LINKS.map(({ label, href }) => (
+          <a key={label} href={href}>{label}</a>
         ))}
       </div>
       <span className="sp-footer-copy">© 2026 SparrowTV.AI · Made for broadcast</span>
